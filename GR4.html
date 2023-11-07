@@ -1,0 +1,100 @@
+<!--
+Pest Guard
+Your Name: Isaac Sanchez, Thomas Say, Dawson Dinh, Danyal Warraich
+Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_scrollbar
+               https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_button_on_image
+               https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_hor_scroll
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Group5GR4</title>
+    <!-- Load style sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+
+    <link rel="stylesheet" href="layout.css">
+
+    <!-- Use mobile-aware viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Load any supplemental Javascript libraries here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="titleBar">
+            <h1>Pest Guard</h1>
+        </div>
+        <div class="cookieLocationBar">
+            <div class="cookieColumn">
+
+            </div>
+            <div class="locationColumn">
+                <label class="locationInfo">Location: <input type="text" id="locationInput"
+                        placeholder="Chicago, IL, 60609"></label>
+                <img src="images/locationSymbol.jpg" id="locationSymbol">
+            </div>
+        </div>
+        <div class="pageContents">
+            <div class="searchBar">
+                <form>
+                    <input type="text" id="search" placeholder="Enter plant, weed, pest, or solution...">
+                    <img src="images/searchMagnifier.jpg" id="searchSymbol">
+                </form>
+            </div>
+            <div class="commonResults">
+                <div class="commonPests">
+                    <h3>
+                        Common Pests Near You:
+                    </h3>
+                    <div class="commonPestList">
+                        <div class="pest">
+                            <img src="images/cicada.jpg" class="listIcon">
+                            <p>Cicadas</p>
+                        </div>
+                        <div class="pest">
+                            <img src="images/rabbit.jpg" class="listIcon">
+                            <p>Rabbits</p>
+                        </div>
+                        <div class="pest">
+                            <img src="images/japaneseBeetle.jpg" class="listIcon">
+                            <p>Japanese Beetles</p>
+                        </div>
+                        <div class="pest">
+                            <img src="images/slug.jpg" class="listIcon">
+                            <p>Slugs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="commonWeeds">
+                    <h3>
+                        Common Weeds Near You:
+                    </h3>
+                    <div class="commonPestList">
+                        <div class="pest">
+                            <img src="images/crabGrass.jpg" class="listIcon">
+                            <p>Crabgrass</p>
+                        </div>
+                        <div class="pest">
+                            <img src="images/dandelions.jpg" class="listIcon">
+                            <p>Dandelion</p>
+                        </div>
+                        <div class="pest">
+                            <img src="images/prostrateKnotweed.jpg" class="listIcon">
+                            <p>Prostrate Knotweed</p>
+                        </div>
+                        <div class="pest">
+                            <img src="images/ragWeed.jpg" class="listIcon">
+                            <p>Common ragweed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
