@@ -185,3 +185,54 @@ p {
     position: absolute;
     transform: translate(95px, -70px);
 }
+
+.pageContents{
+    width: 90px;
+}
+.resourceContents{
+    width: 90px;
+    min-height: 296px;
+}
+.resourceImage{
+    width: 150px;
+}
+.resourceDescription{
+    width: 218px;
+}
+/* .nextResults{
+    width: 90px;
+}
+.resultsBox{
+    width: 90px;
+}
+.result{
+    width: 90px;
+}
+.optionsBox{
+    width: 90px;
+}
+.option{
+    width: 90px;
+} */
+
+.map{
+    width: 295px;
+}
+.mapResults {
+    width: 90px;
+}
+.store {
+    width: 90px;
+}
+.mapPin {
+    width: 33px;
+}
+.storeTitle {
+    width: 115px;
+}
+.storeDistance {
+    width: 115px;
+}
+.storePrice {
+    width: 115px;
+}
