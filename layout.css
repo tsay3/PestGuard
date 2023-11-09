@@ -142,6 +142,7 @@ input {
 h1 {
     text-align: center;
     margin: auto;
+    margin-left: 10px;
     font-style: sans-serif;
     font-weight: bold;
 }
@@ -202,7 +203,6 @@ p {
 }
 .solutionContents{
     display: block grid;
-    /* width: 90px; */
     min-height: 120px;
 }
 .solutionTitle{
@@ -229,21 +229,37 @@ p {
 .solutionDescription br {
     line-height: 2px;
 }
-/* .nextResults{
-    width: 90px;
+.nextResults{
+    display: block grid;
+    position: static;
 }
-.resultsBox{
-    width: 90px;
+.resultsBox {
+    grid-column: 1;
+    display: block;
+    width: 290px;
+    position: static;
+    border: solid 1px green;
+    max-height: 375px;
 }
 .result{
-    width: 90px;
+    display: block grid;
+    padding: 5px;
+}
+.resultName{
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 5%;
+    /* transform: transformY(-50%); */
 }
 .optionsBox{
-    width: 90px;
+    grid-column: 2;
+    display: block;
+    position: static;
 }
 .option{
-    width: 90px;
-} */
+    display: block;
+    position: static;
+}
 
 .mapContents {
     position: static;
