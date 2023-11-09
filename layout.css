@@ -187,17 +187,36 @@ p {
 }
 
 .pageContents{
-    width: 90px;
+    padding: 10px;
 }
-.resourceContents{
-    width: 90px;
-    min-height: 296px;
+.solutionContents{
+    display: block grid;
+    /* width: 90px; */
+    min-height: 120px;
 }
-.resourceImage{
-    width: 150px;
+.solutionTitle{
+    text-align: center;
+    font-weight: bold;
 }
-.resourceDescription{
-    width: 218px;
+.solutionImage{
+    position: absolute;
+    margin-left: 35px;
+    display: inline;
+}
+.solutionImage img {
+    border: solid 5px black;
+}
+.solutionDescription{
+    position: absolute;
+    margin-left: 218px;
+    margin-right: 5px;
+}
+.solutionDescription p {
+    position: static;
+    transform: translate(0px, 0px);
+}
+.solutionDescription br {
+    line-height: 2px;
 }
 /* .nextResults{
     width: 90px;
@@ -215,24 +234,48 @@ p {
     width: 90px;
 } */
 
+.mapContents {
+    position: static;
+}
+
 .map{
+    position: absolute;
     width: 295px;
+    /* margin-left: 10px; */
+}
+.map p {
+    margin-left: 16px;
+    font-style:italic;
+    transform: translate(0px, 0px);
 }
 .mapResults {
-    width: 90px;
+    /* width: 90px; */
+    position: static;
+    margin-left: 317px;
 }
 .store {
-    width: 90px;
+    /* width: 90px; */
+    display: block grid;
+    margin-top: 10px;
 }
 .mapPin {
     width: 33px;
+    margin-top: 10px;
+    position: absolute;
 }
 .storeTitle {
+    /* position: absolute; */
     width: 115px;
+    margin-left: 20px;
+    font-size: 12px;
 }
 .storeDistance {
     width: 115px;
+    margin-left: 20px;
+    font-size: 12px;
 }
 .storePrice {
     width: 115px;
+    margin-left: 20px;
+    font-size: 12px;
 }
