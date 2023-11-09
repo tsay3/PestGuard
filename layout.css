@@ -16,10 +16,21 @@ body {
 }
 
 .titleBar {
-    padding-top: 35px;
+    /* display: block; */
     height: 115px;
     text-align: center;
     background-color: lightgreen;
+    /* padding-bottom: 12px; */
+}
+.titleBar h1 {
+    position: relative;
+    padding-top: 35px;
+}
+
+.homeIcon {
+    position:absolute;
+    display: block;
+    height: auto;
 }
 
 .cookieLocationBar {
