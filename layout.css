@@ -92,6 +92,36 @@ body {
     grid-column: 1 / 1 span;
     margin: auto;
     padding-top: 15px;
+    position: relative;
+}
+
+.searchResults {
+    z-index: 1;
+}
+
+.searchItem {
+    height: 75px;
+    width: 480px;
+    position: relative;
+    z-index: 1;
+    background-color: lightgrey;
+}
+
+.searchItemIcon {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    transform: translate(400px, 0px);
+}
+
+.searchItem:hover {
+    background-color: grey;
+}
+
+.searchText {
+    position: absolute;
+    font-size: 25px;
+    transform: translate(20px, 15px);
 }
 
 input {
@@ -160,8 +190,8 @@ form {
 
 h3 {
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 
 .commonPestList {
@@ -179,7 +209,7 @@ h3 {
     height: 90px;
 }
 
-p {
+.commonPestTitle {
     position: absolute;
     transform: translate(95px, -70px);
 }
