@@ -1,5 +1,4 @@
 
-
 class SearchEntry {
     constructor(
         name,
