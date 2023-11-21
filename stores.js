@@ -1,0 +1,2 @@
+const home_depot1 = {name:"The Home Depot", lat:Number(41.86639096927094), lng:Number(-87.64199656086994), url:"https://www.homedepot.com/l/South-Loop/IL/Chicago/60607/1950/garden-center?cm_mmc=EM%7CGoogleMaps%7CGardenCenter"};
+const lowes = {name:"Lowe's Home Improvement", lat:41.90653535399361, lng:-87.66834200688452, url:""};
