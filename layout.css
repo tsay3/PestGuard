@@ -203,7 +203,7 @@ p {
 }
 .solutionContents{
     display: block grid;
-    min-height: 120px;
+    min-height: 0px;
 }
 .solutionTitle{
     text-align: center;
