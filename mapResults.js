@@ -1,9 +1,9 @@
 this.updateResults = function() {
     var current_location = new google.maps.LatLng(Number(41.867), Number(-87.647));
-    var store_results = [home_depot1, lowes];
+    // var store_results = [home_depot1, lowes];
 
     const result_list = document.getElementById("mapResults");
-    store_results.forEach(item => {
+    stores.forEach(item => {
         var store_location = new google.maps.LatLng(item.lat, item.lng);
         console.log(current_location.toString());
         console.log(store_location.toString());
