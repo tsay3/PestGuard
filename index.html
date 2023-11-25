@@ -6,7 +6,7 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_hor_scroll
                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_autocomplete
                https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
-
+               https://stackoverflow.com/questions/2932782/global-variables-in-javascript-across-multiple-files
 -->
 
 <head>
@@ -22,27 +22,9 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
 
     <!-- Load any supplemental Javascript libraries here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="autoGenerate.js"></script>
 
     <script>
-        const searchMap = new Map();
-        searchMap.set("Cicadas", "Pest");
-        searchMap.set("Rabbits", "Pest");
-        searchMap.set("Radish", "Plant");
-        searchMap.set("Japanese Beetles", "Pest");
-        searchMap.set("Slugs", "Pest");
-        searchMap.set("Crabgrass", "Weed");
-        searchMap.set("Dandelions", "Weed");
-        searchMap.set("Neem Oil", "Solution");
-        searchMap.set("Onions", "Plant");
-        searchMap.set("Prostrate Knotweeds", "Weed");
-        searchMap.set("Common Ragweeds", "Weed");
-
-        const iconMap = new Map();
-        iconMap.set("Pest", "images/pest.png");
-        iconMap.set("Weed", "images/weed.png");
-        iconMap.set("Plant", "images/plant.png");
-        iconMap.set("Solution", "images/solution.png");
-
         function checkResultsList() {
             let searchList = document.getElementsByClassName("searchResults")
             if (searchList[0] != undefined) {
@@ -59,7 +41,7 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
                         && inputText.length > 0) {
                         let entry = new SearchEntry(
                             actualKey,
-                            iconMap.get(key),
+                            iconMap.get(key[1]),
                         );
                         autoList.innerHTML = autoList.innerHTML + entry.entry;
                     }
@@ -80,7 +62,9 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
 
         $(document).on('click', ".searchItem", function (evt) {
             /* Take the user to the associated page of the icon */
-            switch (searchMap.get(this.children[0].innerHTML)) {
+            console.log(searchMap.get(this.children[0].innerHTML)[0]);
+            sessionStorage.setItem("currentPageInfo", searchMap.get(this.children[0].innerHTML)[0])
+            switch (searchMap.get(this.children[0].innerHTML)[1]) {
                 case "Pest":
                     window.location.href = "pest_results.html";
                     console.log("on to the pest page");
