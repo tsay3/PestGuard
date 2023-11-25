@@ -2,7 +2,7 @@
 // for moving from search page to info pages
 
 $(document).on('click', ".pest", function (evt) {
-    /* TODO: Take the user to the pest info page */
+    window.location.href = "pest_results.html";
     console.log("on to the pest page");
 });
 
