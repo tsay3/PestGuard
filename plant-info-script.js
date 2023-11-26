@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             destination: "pest_results.html", // Destination page for Stem and Bulb Nematode
         },
         {
-            name: "Onion Fly",
+            name: "Onion Flies",
             image: "plant-info-images/onion-fly.jpg",
             destination: "pest_results.html", // Destination page for Onion Fly
         },

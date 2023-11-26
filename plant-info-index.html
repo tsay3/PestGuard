@@ -23,8 +23,16 @@
   </script>
 
   <script src="autoGenerate.js"></script>
+  <script src="breadcrumbs.js"></script>
   <script>
     var pageInfo = pageMap.get(sessionStorage.getItem("currentPageInfo"));
+
+    $(document).on('mousedown', ".pest", function (evt) {
+      console.log(this);
+      var pestName = this.children[0].children[1].innerHTML;
+      console.log(pestName);
+      matchTextWithData(pestName);
+    });
   </script>
 
 </head>
@@ -109,7 +117,7 @@
         <div class="pest">
           <a href="pest_results.html">
             <img src="plant-info-images/onion-fly.jpg" class="listIcon">
-            <p>Onion fly</p>
+            <p>Onion flies</p>
           </a>
         </div>
 

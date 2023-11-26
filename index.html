@@ -7,6 +7,7 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_autocomplete
                https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
                https://stackoverflow.com/questions/2932782/global-variables-in-javascript-across-multiple-files
+               https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onmousedown
 -->
 
 <head>
@@ -25,6 +26,8 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
     <script src="autoGenerate.js"></script>
 
     <script>
+        console.log(window.innerWidth);
+
         function checkResultsList() {
             let searchList = document.getElementsByClassName("searchResults")
             if (searchList[0] != undefined) {
@@ -85,8 +88,11 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
 
         $(document).on('click', "#searchSymbol", function (evt) {
             let firstSearchResult = document.getElementsByClassName("searchResults")[0];
+            console.log(firstSearchResult);
+            let resultObject = searchMap.get(firstSearchResult.children[0].children[0].innerHTML);
+            sessionStorage.setItem("currentPageInfo", resultObject[0]);
             if (firstSearchResult != undefined) {
-                switch (searchMap.get(firstSearchResult.children[0].children[0].innerHTML)) {
+                switch (resultObject[1]) {
                     case "Pest":
                         window.location.href = "pest_results.html";
                         console.log("on to the pest page");
@@ -110,6 +116,8 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
         $(document).on('click', function (evt) {
             checkResultsList();
         });
+
+
 
     </script>
 
@@ -143,7 +151,7 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
             <div class="commonResults">
                 <div class="commonPests">
                     <h3>
-                        Common Pests Near You:
+                        Most Common Pests Near You
                     </h3>
                     <div class="commonPestList">
                         <div class="pest">
@@ -166,7 +174,7 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
                 </div>
                 <div class="commonWeeds">
                     <h3>
-                        Common Weeds Near You:
+                        Most Common Weeds Near You
                     </h3>
                     <div class="commonPestList">
                         <div class="pest">

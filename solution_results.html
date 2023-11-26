@@ -21,6 +21,7 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <script src="autoGenerate.js"></script>
+    <script src="breadcrumbs.js"></script>
     <script>
         var pageInfo = pageMap.get(sessionStorage.getItem("currentPageInfo"));
     </script>
@@ -99,11 +100,11 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
 
 </body>
 <script>
-    document.getElementsByClassName("solutionTitle")[0].innerHTML = pageInfo.name;
-    document.getElementsByClassName("solutionImage")[0].lastElementChild.src = pageInfo.image;
-    document.getElementsByClassName("solutionDescription")[0].children[0].innerHTML = pageInfo.description1;
-    document.getElementsByClassName("solutionDescription")[0].children[2].innerHTML = pageInfo.description2;
-    document.getElementsByClassName("solutionDescription")[0].children[4].innerHTML = pageInfo.description3;
+    // document.getElementsByClassName("solutionTitle")[0].innerHTML = pageInfo.name;
+    // document.getElementsByClassName("solutionImage")[0].lastElementChild.src = pageInfo.image;
+    // document.getElementsByClassName("solutionDescription")[0].children[0].innerHTML = pageInfo.description1;
+    // document.getElementsByClassName("solutionDescription")[0].children[2].innerHTML = pageInfo.description2;
+    // document.getElementsByClassName("solutionDescription")[0].children[4].innerHTML = pageInfo.description3;
 </script>
 
 </html>
