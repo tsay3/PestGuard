@@ -7,9 +7,8 @@
     display: grid;
     padding: 0px;
     outline: 1px solid black;
-    /* transform-origin: left;
-    transform: scaleX(2);
-    transform: scaleY(2); */
+    transform-origin: center top;
+    /* transform: scale(2, 2); */
 }
 
 body {
