@@ -13,6 +13,8 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
     <meta charset="utf-8">
     <title>Group5GR4</title>
     <!-- Load style sheets -->
+    <style> </style>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
 
     <link rel="stylesheet" href="searchLayout.css">
@@ -131,6 +133,10 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
 
     <script src="search.js"></script>
     <script src="searchEntry.js"></script>
+   
+    <script src="mainPage-location.js"></script>
+   
+
 </head>
 
 <body>
@@ -145,8 +151,10 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
             </div>
             <div class="locationColumn">
                 <label class="locationInfo">Location: <input type="text" id="locationInput"
-                        placeholder="Chicago, IL, 60609"></label>
-                <img src="images/locationSymbol.jpg" id="locationSymbol">
+                        placeholder="Chicago, IL, 60609" oninput="showDropdown()"></label>
+                        <img src="images/locationSymbol.jpg" id="locationSymbol" onclick="setDefaultLocation()">
+                        
+                <div id="locationDropdown" class="locationDropdown"></div>
             </div>
         </div>
         <div class="pageContents">
@@ -156,12 +164,13 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
                     <img src="images/searchMagnifier.jpg" id="searchSymbol">
                 </form>
             </div>
-            <div class="commonResults">
+            <div class="commonResults" id="commonResults">
+                
                 <div class="commonPests">
                     <h3>
                         Common Pests Near You:
                     </h3>
-                    <div class="commonPestList">
+                    <div class="commonPestList" id="commonPestList">
                         <div class="pest">
                             <img src="images/cicada.jpg" class="listIcon listPest">
                             <p class="commonPestTitle">Cicadas</p>
@@ -180,11 +189,15 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
                         </div>
                     </div>
                 </div>
+                
+                
                 <div class="commonWeeds">
                     <h3>
                         Common Weeds Near You:
                     </h3>
-                    <div class="commonPestList">
+                    
+                    
+                    <div class="commonPestList" id="commonWeedList">
                         <div class="pest">
                             <img src="images/crabGrass.jpg" class="listIcon listWeed">
                             <p class="commonPestTitle">Crabgrass</p>
@@ -202,7 +215,12 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
                             <p class="commonPestTitle">Common ragweed</p>
                         </div>
                     </div>
+
+
                 </div>
+                
+
+
             </div>
         </div>
     </div>
@@ -210,3 +228,4 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
 </body>
 
 </html>
+
