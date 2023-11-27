@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
     const pestsButton = document.getElementById('pests-button');
     const weedsButton = document.getElementById('weeds-button');
-    const commonPestList = document.querySelector('.commonPestList');
+    const commonPestList = document.querySelector('.info-box');
 
 
     const pestsData = [
         {
             name: "Aphids",
             image: "plant-info-images/aphid.jpg",
-            destination: "aphids-page.html", // Destination page for Aphids
+            destination: "pest_results.html", // Destination page for Aphids
         },
         {
             name: "Stem and Bulb Nema",
             image: "plant-info-images/stem-bulb.jpg",
-            destination: "aphids-page.html", // Destination page for Stem and Bulb Nematode
+            destination: "pest_results.html", // Destination page for Stem and Bulb Nematode
         },
         {
             name: "Onion Fly",
             image: "plant-info-images/onion-fly.jpg",
-            destination: "aphids-page.html", // Destination page for Onion Fly
+            destination: "pest_results.html", // Destination page for Onion Fly
         },
     ];
 
@@ -26,18 +26,18 @@ const weedsData = [
     {
         name: "Wild Mustard",
         image: "plant-info-images/wild-mustard.jpeg",
-        destination: "aphids-page.html",
+        destination: "pest_results.html",
 
     },
     {
         name: "Barnyard Grass",
         image: "plant-info-images/barnyard-grass.jpg",
-        destination: "aphids-page.html",
+        destination: "pest_results.html",
     },
     {
         name: "Field Bindweed",
         image: "plant-info-images/field-bindweed.jpg",
-        destination: "aphids-page.html",
+        destination: "pest_results.html",
 
     },
 
