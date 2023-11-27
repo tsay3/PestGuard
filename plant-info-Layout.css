@@ -1,9 +1,28 @@
-.buttons button {
-  width: 130px;
-  border-radius: 20px;
-  margin-top: 5%;
-  cursor: pointer;
+#search {
+  width: 480px;
+  height: 60px;
+  font-style: italic;
+  font-size: 23px;
+  padding: 15px
+}
 
+#searchSymbol {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: translate(-140%, 10%);
+}
+
+/* Plant info Page */
+
+.middlePage {
+  padding: 10px;
+  
+}
+
+.middlePage-Content {
+  display: block grid;
+    min-height: 120px;
 }
 
 .info-onion {
@@ -12,71 +31,38 @@
     display: inline;
 }
 
-
-.homeIcon {
-  width: 90px;
-  height: 90px;
-  top: 0;
-  left: 0;
-  border-radius: 40%;
-
+.OnionTitle-image {
+  text-align: center;
+  font-weight: bold;
 }
 
-.homeIcon-title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40%;
-
+.info-onion img {
+  border: solid 5px black;
 }
 
-
-.info {
-margin-top: 20%; 
-}
-
-
-.info-box {
-  width: 420px;
-  border: 2px solid #ccc;
-  padding: 10px;
-  margin: 20px;
-  /* margin-left: 15px; */
-  margin-left: 0px;
-  /* height: 359px; */
-  height: 400px;
-}
-
-/* Plant info Page */
-
-.middlePage {
-  width: 100%;
-  height: 100%;
-  grid-row: 3 / 1 span;
-  grid-template-columns: auto;
-  grid-template-rows: 95px, 540px;
-  width: 480px;
-  height: 635px;
-  display: grid;
-  padding: 0px;
-  /* outline: 1px solid black; */
-  
-}
-
-.middlePage-Content {
-  height: 95px;
-  grid-row: 1 / 1 span;
-  grid-column: 1 / 1 span;
-  margin: auto;
-  padding-top: 15px;
-}
-
-.homeIcon {
-  width: 90px;
-  height: 90px;
+.plant-description{
   position: absolute;
+  margin-left: 218px;
+  margin-right: 5px;
+  margin-top: 28px;
+}
+
+.plant-description p {
+  position: static;
+  transform: translate(0px, 0px);
+}
+.plant-description br {
+  line-height: 2px;
+}
+
+.homeIcon {
+  width: 90px;
+  height: 90px;
   top: 0;
   left: 0;
-  border-radius: 40%;
+  border-radius: 10%;
+  margin-top: 3%;
+  margin-left: 3%;
 
 }
 
@@ -88,17 +74,8 @@ margin-top: 20%;
 }
 
 .OnionImage {
-  width: 120px;
-  height: 120px;
-  display: block;
-  margin: 0 auto;
-}
-
-.OnionTitle-image {
-  margin-right: 300px;
-  margin-left: 20px;
-
-
+  width: 150px;
+  
 }
 
 .OnionTitle-image h3 {
@@ -111,6 +88,10 @@ margin-top: 20%;
 margin-top: 20%; 
 }
 
+.pest:hover {
+  background-color: #d5f6d5;
+  border-radius: 5px;
+}
 
 
 .info-box {
@@ -118,8 +99,8 @@ margin-top: 20%;
   border: 2px solid #ccc;
   padding: 10px;
   margin: 20px;
-  margin-left: 0px;
-  height: 400px;
+  margin-left: 15px;
+  height: 359px;
 
 }
 
@@ -128,14 +109,28 @@ margin-top: 20%;
   justify-content: space-between;
   margin-right: 33%;
   margin-left: 15px;
-  
+  margin-top: 15%;
   
 }
 
-.pest:hover {
-  background-color: #d5f6d5;
-  border-radius: 5px;
+.buttons button {
+  width: 130px;
+  border-radius: 20px;
+  margin-top: 5%;
+  cursor: pointer;
+
 }
+
+#pests-button {
+  background-color: #4CAF50;
+  color:#fff;
+}
+
+#weeds-button {
+  background-color: #fff;
+  color:#000;
+}
+/*<button id="weeds-button">Weeds</button> */
 
 #info-content {
   display: none;
@@ -143,14 +138,4 @@ margin-top: 20%;
 
 #info-content img {
   max-width: 100%;
-}
-
-#pests-button {
-  background-color: #4CAF50;
-  color: #fff;
-}
-
-#weeds-button {
-  background-color: #fff;
-  color: #000;
 }
