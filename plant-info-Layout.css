@@ -1,14 +1,3 @@
-/* Consistent across all pages*/
-
-.buttons {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 33%;
-  margin-left: 15px;
-  margin-top: 15%;
-  
-}
-
 .buttons button {
   width: 130px;
   border-radius: 20px;
@@ -23,9 +12,6 @@
     display: inline;
 }
 
-.info-onion img {
-  border: solid 5px black;
-}
 
 .homeIcon {
   width: 90px;
@@ -63,7 +49,6 @@ margin-top: 20%;
 /* Plant info Page */
 
 .middlePage {
-  /* padding: 10px; */
   width: 100%;
   height: 100%;
   grid-row: 3 / 1 span;
@@ -78,48 +63,73 @@ margin-top: 20%;
 }
 
 .middlePage-Content {
-  display: block grid;
-    min-height: 120px;
   height: 95px;
   grid-row: 1 / 1 span;
   grid-column: 1 / 1 span;
-  margin: 0;
+  margin: auto;
   padding-top: 15px;
 }
 
+.homeIcon {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 40%;
+
+}
+
+.homeIcon-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40%;
+
+}
+
 .OnionImage {
-  /* width: 150px; */
-  
   width: 120px;
   height: 120px;
   display: block;
-  margin: 0;
+  margin: 0 auto;
+}
+
+.OnionTitle-image {
+  margin-right: 300px;
+  margin-left: 20px;
+
+
 }
 
 .OnionTitle-image h3 {
   margin: 0;
+
 }
 
-.OnionTitle-image {
-  text-align: center;
-  font-weight: bold;
-  margin-right: 300px;
-  margin-left: 20px;
+
+.info {
+margin-top: 20%; 
 }
 
-.plant-description{
-  position: absolute;
-  margin-left: 218px;
-  margin-right: 5px;
-  margin-top: 28px;
+
+
+.info-box {
+  width: 420px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 20px;
+  margin-left: 0px;
+  height: 400px;
+
 }
 
-.plant-description p {
-  position: static;
-  transform: translate(0px, 0px);
-}
-.plant-description br {
-  line-height: 2px;
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 33%;
+  margin-left: 15px;
+  
+  
 }
 
 .pest:hover {
@@ -137,10 +147,10 @@ margin-top: 20%;
 
 #pests-button {
   background-color: #4CAF50;
-  color:#fff;
+  color: #fff;
 }
 
 #weeds-button {
   background-color: #fff;
-  color:#000;
+  color: #000;
 }
