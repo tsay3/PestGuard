@@ -17,7 +17,7 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
     <link rel="stylesheet" href="pestLayout.css">
 
     <!-- Use mobile-aware viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="initial-scale=0">
 
     <!-- Load any supplemental Javascript libraries here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -28,7 +28,7 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
     <script src="pest_results_options.js"></script>
     <script defer type="text/javascript">
         var pageInfo = pageMap.get(sessionStorage.getItem("currentPageInfo"));
-        window.onload = function() {
+        window.onload = function () {
             loadInfo();
         }
     </script>
@@ -136,6 +136,7 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
     console.log(websiteContainer);
     console.log(xScaler);
     (websiteContainer).style.transform = "scale(" + xScaler, xScaler + ")";
+
 
 </script>
 
