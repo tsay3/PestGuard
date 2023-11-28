@@ -16,11 +16,10 @@ body {
 }
 
 .titleBar {
-    /* display: block; */
+    padding-top: 35px;
     height: 115px;
     text-align: center;
     background-color: lightgreen;
-    /* padding-bottom: 12px; */
 }
 .titleBar h1 {
     position: relative;
@@ -28,9 +27,26 @@ body {
 }
 
 .homeIcon {
-    position:absolute;
-    display: block;
-    height: auto;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10%;
+    margin-top: 3%;
+    margin-left: 3%;
+    /*transition: filter 0.3s;*/
+  }
+/*
+.homeIcon:hover {
+    filter: grayscale(100%);
+  }
+*/
+.homeIcon-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40%;
+
 }
 
 .cookieLocationBar {
@@ -142,7 +158,6 @@ input {
 h1 {
     text-align: center;
     margin: auto;
-    margin-left: 10px;
     font-style: sans-serif;
     font-weight: bold;
 }
@@ -244,6 +259,10 @@ p {
 .result{
     display: block grid;
     padding: 5px;
+}
+
+.result:hover{
+    background-color: #d5f6d5;
 }
 .resultName{
     position: absolute;
