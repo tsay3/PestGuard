@@ -87,6 +87,9 @@ h1 {
     position: static;
 }
 
+.hiddenItem{
+    display: none;
+}
 .homeIcon-title a {
     margin-left: 30%;
 }
