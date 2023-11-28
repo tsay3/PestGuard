@@ -56,24 +56,6 @@
   line-height: 2px;
 }
 
-.homeIcon {
-  width: 90px;
-  height: 90px;
-  top: 0;
-  left: 0;
-  border-radius: 10%;
-  margin-top: 3%;
-  margin-left: 3%;
-
-}
-
-.homeIcon-title {
-  display: flex;
-  align-items: center;
-  margin-bottom: 40%;
-
-}
-
 .OnionImage {
   width: 150px;
 

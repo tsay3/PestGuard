@@ -15,38 +15,46 @@ h1 {
     margin-left: 10px;
 }
 
-.solutionContents{
+.solutionContents {
     display: block grid;
     min-height: 120px;
 }
-.solutionTitle{
+
+.solutionTitle {
     text-align: center;
     font-weight: bold;
 }
-.solutionImage{
+
+.solutionImage {
     position: absolute;
     margin-left: 35px;
     display: inline;
 }
+
 .solutionImage img {
     border: solid 5px black;
 }
-.solutionDescription{
+
+.solutionDescription {
     position: absolute;
     margin-left: 218px;
     margin-right: 5px;
 }
+
 .solutionDescription p {
     position: static;
     transform: translate(0px, 0px);
 }
+
 .solutionDescription br {
     line-height: 2px;
 }
-.nextResults{
+
+.nextResults {
     display: block grid;
     position: static;
 }
+
 .resultsBox {
     grid-column: 1;
     display: block;
@@ -55,22 +63,30 @@ h1 {
     border: solid 1px green;
     max-height: 375px;
 }
-.result{
+
+.result {
     display: block grid;
     padding: 5px;
 }
-.resultName{
+
+.resultName {
     position: absolute;
     margin-left: 100px;
     margin-top: 5%;
     /* transform: transformY(-50%); */
 }
-.optionsBox{
+
+.optionsBox {
     grid-column: 2;
     display: block;
     position: static;
 }
-.option{
+
+.option {
     display: block;
     position: static;
+}
+
+.homeIcon-title a {
+    margin-left: 25%;
 }
