@@ -26,7 +26,7 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
     <link rel="stylesheet" href="searchLayout.css">
 
     <!-- Use mobile-aware viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
 
     <!-- Load any supplemental Javascript libraries here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -226,15 +226,15 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
 </body>
 
 <script>
-    // console.log(window.innerWidth);
-    // //console.log(scale(window.innerWidth / 480, window.innerWidth / 480));
-    // let xScaler = (window.innerWidth / 480) - 0.05;
-    // let yScaler = window.innerWidth / 480;
-    // let websiteContainer = document.getElementsByClassName("container")[0];
-    // console.log(document.getElementsByClassName("container"));
-    // console.log(websiteContainer);
-    // console.log(xScaler);
-    // (websiteContainer).style.transform = "scale(" + xScaler, xScaler + ")";
+    console.log(window.innerWidth);
+    //console.log(scale(window.innerWidth / 480, window.innerWidth / 480));
+    let xScaler = (window.innerWidth / 480) - 0.04;
+    let yScaler = window.innerWidth / 480;
+    let websiteContainer = document.getElementsByClassName("container")[0];
+    console.log(document.getElementsByClassName("container"));
+    console.log(websiteContainer);
+    console.log(xScaler);
+    (websiteContainer).style.transform = "scale(" + xScaler, xScaler + ")";
 
 </script>
 
