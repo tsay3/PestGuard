@@ -29,7 +29,7 @@
   height: 800px;
   display: grid;
   padding: 0px;
-  outline: 1px solid black;
+  transform-origin: center top;
 }
 
 body {

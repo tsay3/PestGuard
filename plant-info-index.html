@@ -146,6 +146,19 @@
   document.getElementsByClassName("plant-description")[0].children[1].innerHTML = pageInfo.description2;
 </script>
 
+<script>
+  console.log(window.innerWidth);
+  //console.log(scale(window.innerWidth / 480, window.innerWidth / 480));
+  let xScaler = (window.innerWidth / 480) - 0.05;
+  let yScaler = window.innerWidth / 480;
+  let websiteContainer = document.getElementsByClassName("container")[0];
+  console.log(document.getElementsByClassName("container"));
+  console.log(websiteContainer);
+  console.log(xScaler);
+  (websiteContainer).style.transform = "scale(" + xScaler, xScaler + ")";
+
+</script>
+
 </html>
 
 </html>
