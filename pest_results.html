@@ -22,11 +22,17 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
     <!-- Load any supplemental Javascript libraries here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+    <script src="url.js"></script>
+    <script src="data.js"></script>
     <script src="autoGenerate.js"></script>
-    <script src="breadcrumbs.js"></script>
-    <script>
+    <script src="pest_results_options.js"></script>
+    <script defer type="text/javascript">
         var pageInfo = pageMap.get(sessionStorage.getItem("currentPageInfo"));
+        window.onload = function() {
+            loadInfo();
+        }
     </script>
+    <script src="breadcrumbs.js"></script>
 </head>
 
 <body>
@@ -51,22 +57,22 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
             </div>
         </div>
         <div class="pageContents">
-            <div class="solutionContents">
-                <div class="solutionImage">
-                    <div class="solutionTitle">
+            <div class="solutionContents" id="pestContents">
+                <div class="solutionImage" id="pestImage">
+                    <div class="solutionTitle" id="pestTitle">
                         Aphids
                     </div>
-                    <img src="images/aphid.jpg" width="150">
+                    <img id="pestImage" src="images/aphid.jpg" width="150">
                 </div>
-                <div class="solutionDescription">
+                <div class="solutionDescription" id="pestDescription">
                     <ul>Small sap-sucking insect.</ul><br>
                     <ul>Usually harmless.</ul><br>
                     <ul>Severe cases may cause yellowed folliage, twisted leaves, and poor plant growth.</ul>
                 </div>
             </div>
             <div class="nextResults">
-                <div class="resultsBox">
-                    <div class="result">
+                <div class="resultsBox" id="resultsBox">
+                    <!-- <div class="result">
                         <div class="resultPicture">
                             <img src="images/insecticidalSoap.jpg" width="85">
                         </div>
@@ -85,20 +91,20 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
                             </div>
                             <div class="resultName">Neem Oil</div>
                         </div>
-                    </a>
+                    </a> -->
                 </div>
                 <div class="optionsBox">
                     <h4>Filter:</h4>
                     <div class="option">
-                        <input type="checkbox" id="naturalSolution" value="All-natural">
+                        <input type="checkbox" id="naturalSolution" value="All-natural" onclick="updateResults();">
                         <label for="naturalSolution">All-natural</label><br>
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="petSolution" value="Pet-friendly">
+                        <input type="checkbox" id="petSolution" value="Pet-friendly" onclick="updateResults();">
                         <label for="petSolution">Pet-friendly</label><br>
                     </div>
                     <div class="option">
-                        <input type="checkbox" id="ecoSolution" value="Eco-friendly">
+                        <input type="checkbox" id="ecoSolution" value="Eco-friendly" onclick="updateResults();">
                         <label for="ecoSolution">Eco-friendly</label><br>
                     </div>
                 </div>
@@ -109,11 +115,9 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
 </body>
 
 <script>
-    document.getElementsByClassName("solutionTitle")[0].innerHTML = pageInfo.name;
-    document.getElementsByClassName("solutionImage")[0].lastElementChild.src = pageInfo.image;
-    document.getElementsByClassName("solutionDescription")[0].children[0].innerHTML = pageInfo.description1;
-    document.getElementsByClassName("solutionDescription")[0].children[2].innerHTML = pageInfo.description2;
-    document.getElementsByClassName("solutionDescription")[0].children[4].innerHTML = pageInfo.description3;
+    populateResults();
 </script>
+<!-- <script>
+</script> -->
 
 </html>
