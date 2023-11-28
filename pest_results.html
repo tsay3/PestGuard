@@ -125,4 +125,17 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
     document.getElementsByClassName("solutionDescription")[0].children[4].innerHTML = pageInfo.description3;
 </script>
 
+<script>
+    console.log(window.innerWidth);
+    //console.log(scale(window.innerWidth / 480, window.innerWidth / 480));
+    let xScaler = (window.innerWidth / 480) - 0.05;
+    let yScaler = window.innerWidth / 480;
+    let websiteContainer = document.getElementsByClassName("container")[0];
+    console.log(document.getElementsByClassName("container"));
+    console.log(websiteContainer);
+    console.log(xScaler);
+    (websiteContainer).style.transform = "scale(" + xScaler, xScaler + ")";
+
+</script>
+
 </html>
