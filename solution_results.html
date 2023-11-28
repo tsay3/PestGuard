@@ -22,10 +22,10 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
 
     <!-- Load any supplemental Javascript libraries here -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="http://maps.google.com/maps/api/js?libraries=geometry&sensor=true_or_false"></script>
+    <!-- <script type="text/javascript"
+        src="http://maps.google.com/maps/api/js?libraries=geometry&sensor=true_or_false"></script> -->
     <script src="data.js"></script>
-
+    <script src="url.js"></script>
     <script src="autoGenerate.js"></script>
     <script src="breadcrumbs.js"></script>
     <script>
@@ -51,8 +51,8 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
         </div>
         <div class="cookieLocationBar">
             <div class="cookieColumn">
-                <div>&nbsp;&#12297;&nbsp;<a href="plant-info-index.html">Onion</a>&nbsp;&#12297;&nbsp;<a
-                        href="pest_results.html">Aphid</a>&nbsp;&#12297;&nbsp;<b>Neem Oil</b></b></div>
+                <div>&nbsp;&#12297;&nbsp;<a href="plant-info-index.html" id="plantCookie">Onion</a>&nbsp;&#12297;&nbsp;<a
+                        href="pest_results.html" id="pestCookie">Aphid</a>&nbsp;&#12297;&nbsp;<b id="solutionCookie">Neem Oil</b></b></div>
             </div>
             <div class="locationColumn">
                 <label class="locationInfo">Location: <input type="text" id="locationInput"
@@ -78,20 +78,11 @@ Collaborators: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cus
             <div class="mapContents">
                 <div id="map" class="map">
                     <p>Availability:</p><br>
-                    <script>
-                        var map;
-                        function initMap() {
-                            map = new google.maps.Map(document.getElementById('map'), {
-                                center: { lat: 41.867, lng: -87.647 },
-                                zoom: 13
-                            });
-                            solutionResults();
-                            updateResults();
-                        }
-                    </script>
+                    <div id="mapHere">
+                    </div>
                     <script
-                        src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyCP9AE400ErDVd_XZNrYQpk4yqsIpcptq0&callback=initMap"
-                        async defer></script>
+                        src="https://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=true_or_false&key=AIzaSyCP9AE400ErDVd_XZNrYQpk4yqsIpcptq0&callback=initMap"
+                        async></script>
                 </div>
                 <div id="mapResults" class="mapResults">
                     <script src="mapResults.js"></script>

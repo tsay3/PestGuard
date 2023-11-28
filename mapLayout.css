@@ -4,9 +4,10 @@
     position: static;
 }
 
-.map{
+#mapHere{
     position: absolute;
     width: 295px;
+    height: 280px;
     /* margin-left: 10px; */
 }
 .map p {

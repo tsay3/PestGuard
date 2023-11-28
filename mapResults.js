@@ -1,10 +1,31 @@
-this.updateResults = function() {
+var map;
+var markers = [];
+function initMap() {
+    map = new google.maps.Map(document.getElementById('mapHere'), {
+        center: { lat: 41.867, lng: -87.647 },
+        zoom: 13,
+        disableDefaultUI: true,
+    });
+
+    solutionResults();
+    updateMapResults();
+}
+
+this.updateMapResults = function() {
     var current_location = new google.maps.LatLng(Number(41.867), Number(-87.647));
     // var store_results = [home_depot1, lowes];
 
     const result_list = document.getElementById("mapResults");
+    markers.forEach(marker => {
+        marker.setMap(null);
+    })
     stores.forEach(item => {
         var store_location = new google.maps.LatLng(item.lat, item.lng);
+        markers.push(new google.maps.Marker({
+            position: store_location,
+            map,
+            title: item.name
+        }));
         console.log(current_location.toString());
         console.log(store_location.toString());
         console.log(typeof current_location, typeof store_location);
