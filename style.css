@@ -172,3 +172,8 @@ p {
   /* outline: 1px solid black; */
 
 }
+
+#pestImage,
+.OnionImage {
+  max-height: 180px;
+}
