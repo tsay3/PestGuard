@@ -32,9 +32,32 @@
   transform-origin: center top;
 }
 
+/* @media screen and (max-width: 600px) {
+  .container {
+    width: 100vw;
+  }
+} */
+
 body {
   margin: auto;
 }
+
+/* 
+@media screen and (max-width: 600px) {
+  .body {
+    width: 100vw;
+  }
+} */
+
+html {
+  margin: auto;
+}
+
+/* @media screen and (max-width: 600px) {
+  html {
+    width: 100vw;
+  }
+} */
 
 .titleBar {
   padding-top: 35px;
