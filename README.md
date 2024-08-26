@@ -5,7 +5,7 @@ Pest Guard was created for CS 422: UI Design in Fall 2023 at the University of I
 
 # Instructions
 
-Go to https://tsay3.github.io/pestguard to start using it.
+Go to https://cs-422-gr-4.vercel.app  to start using it within your browser.
 
 The sample database contains a few pests, a few weeds, a few pesticides, and a map referencing a few stores centered around Chicago. A more complete implementation would include an API to 
 
